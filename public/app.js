@@ -114,13 +114,13 @@ jQuery(function($){
                 });
                 $('#player1Score').find('.playerName').html(App.Host.players[0].playerName);
                 $('#player2Score').find('.playerName').html(App.Host.players[1].playerName);
-/*                $('#player3Score').find('.playerName').html(App.Host.players[2].playerName);
+                $('#player3Score').find('.playerName').html(App.Host.players[2].playerName);
                 $('#player4Score').find('.playerName').html(App.Host.players[3].playerName);
-*/                $('#player1Score').find('.score').attr('id',App.Host.players[0].mySocketId);
+                $('#player1Score').find('.score').attr('id',App.Host.players[0].mySocketId);
                 $('#player2Score').find('.score').attr('id',App.Host.players[1].mySocketId);
-/*                $('#player3Score').find('.score').attr('id',App.Host.players[2].mySocketId);
+                $('#player3Score').find('.score').attr('id',App.Host.players[2].mySocketId);
                 $('#player4Score').find('.score').attr('id',App.Host.players[3].mySocketId);
-*/            },
+            },
             newWord : function(data) {
                 $('#hostWord').text(data.word);
                 App.doTextFit('#hostWord');
@@ -150,14 +150,14 @@ jQuery(function($){
                 var $p2 = $('#player2Score');
                 var p2Score = +$p2.find('.score').text();
                 var p2Name = $p2.find('.playerName').text();
-/*                var $p3 = $('#player3Score');
+                var $p3 = $('#player3Score');
                 var p3Score = +$p3.find('.score').text();
                 var p3Name = $p3.find('.playerName').text();
                 var $p4 = $('#player4Score');
                 var p4Score = +$p4.find('.score').text();
                 var p4Name = $p4.find('.playerName').text();
-*/                var winner1 = (p1Score < p2Score) ? p2Name : p1Name;
-/*                var winner2 = (p3Score<p4Score)?p4Name:p3Name ;
+                var winner1 = (p1Score < p2Score) ? p2Name : p1Name;
+                var winner2 = (p3Score<p4Score)?p4Name:p3Name ;
                 var winner ;
                 if(winner1==p2Name)
                 {
@@ -181,7 +181,7 @@ jQuery(function($){
                         winner = (p1Score<p3Score)?p3Name:p1Name ;
                     }
                 }
-*/                var tie = (p1Score === p2Score);
+                var tie = (p1Score === p2Score);
                 if(tie){
                     $('#hostWord').text("It's a Tie!");
                 } else {
