@@ -1,0 +1,16 @@
+{
+  "name": "Quiz",
+  "description": "Real Time Quiz",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "socket.io": "0.9"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+}
